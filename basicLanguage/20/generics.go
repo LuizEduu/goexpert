@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/luizeduu/goexpert/matematica"
+	car "cursogo/Car"
 )
 
 //utilizando interfaces vazias
@@ -36,12 +34,17 @@ func compare[T comparable](a, b T) bool {
 }
 
 func main() {
-	m := map[string]int{"a": 5, "b": 10}
+	/* m := map[string]int{"a": 5, "b": 10}
 	m2 := map[string]float64{"a": 20.2, "b": 450.24}
 
 	result := matematica.Sum(m)
 	result2 := matematica.Sum(m2)
 
 	fmt.Println(result)
-	fmt.Println(result2)
+	fmt.Println(result2) */
+
+	car := car.Car{Marca: "Fiat"}
+
+	car.Run()
+
 }

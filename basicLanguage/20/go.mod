@@ -1,3 +1,3 @@
-module github.com/luizeduu/goexpert
+module cursogo
 
 go 1.22.2
